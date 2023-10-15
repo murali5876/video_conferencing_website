@@ -1,0 +1,175 @@
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:hsl(178, 89%, 33%);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: hsl(178, 93%, 27%);
+    width: 120px;
+    padding: 10px 0;
+}
+
+nav .logo {
+    width: 90%;
+    height: 100px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li img {
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s, background 0.5s;
+}
+
+nav ul li img:hover {
+    opacity: 1;
+    background: #4d6181;
+}
+
+nav ul li .active {
+    opacity: 1;
+    background: #4d6181;
+}
+
+.container {
+    margin-left: 120px;
+    padding: 0 2.5%;
+}
+
+.top-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px 0;
+}
+
+.top-icons img {
+    width: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex-basis: 65%;
+}
+
+.col-2 {
+    flex-basis: 33%;
+}
+
+.host-img {
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls img {
+    width: 60px;
+    margin: 30px 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.controls img:hover {
+    transform: translateY(-10px);
+}
+
+.joined {
+    background-color:hsl(178, 93%, 27%);
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    color: #fff;
+}
+
+.joined div {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.joined img {
+    width: 100px;
+    height: 135px; 
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.invite {
+    background-color:hsl(178, 93%, 27%);
+    border-radius: 15px;
+    padding: 30px 40px 50px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.invite img {
+    margin-top: 20px;
+    width: 62px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 58px;
+}
+
+nav ul {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+    margin-top: 100px;
+}
+
+.label {
+    display: none;
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+}
+
+.menu-label, .search-label {
+    display: none;
+    position: absolute;
+    background: transparent; 
+    color: white;
+    padding: 5px;
+    text-align: center; 
+    width: auto; 
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    border: 2px solid white; 
+}

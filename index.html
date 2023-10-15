@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: #f0f0ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #logo-container {
+            text-align: center;
+            margin-top: -17px;
+        }
+
+        #logo {
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        #meeting-container {
+            background-color: #3498db;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            height: 400px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            width: 350px;
+        }
+        #meeting-container label {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+            display: inline-block;
+            width: 100%;
+        }
+        
+
+        #meeting-container input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 10px;
+            background-color: #f7f7f7;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        #meeting-container input[type="submit"] {
+            background-color: #25cc08;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #meeting-container input[type="submit"]:hover {
+            background-color: #148f77;
+        }
+
+        #meeting-container input::placeholder {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo-container">
+        <div id="logo">
+            <img src="images/logo.png" height="200px" width="200px">
+        </div>
+    </div>
+
+    <h1></h1>
+
+    <div id="meeting-container">
+        <form action="home.html" method="post">
+            <label for="meetingID" style="font-family: Arial, sans-serif; font-size: 20px; background-color: rgb(198, 220, 70); padding: 10px; border-radius: 10px;">Meeting ID:</label>
+            <input type="text" id="meetingID" name="meetingID" required placeholder="Enter Meeting ID">
+            <label for="password" style="font-family: Arial, sans-serif; font-size: 20px; background-color: rgb(198, 220, 70); padding: 10px; border-radius: 10px;">Password:</label>
+            <input type="password" id="password" name= "password" required placeholder="Enter Password">
+            <input type="submit" value="Join Meeting">
+        </form>
+    </div>
+</body>
+</html>
